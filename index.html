@@ -5,58 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-    <title>Delin Herliana</title>
+    <title>My Turtle</title>
 </head>
 <body>
     <div class="container">
-        <section class="profil">
-            <img src="asset/picdelin1.jpg" alt="delin" class="fotodelin">
-            <h1>Hi, Saya Delin</h1>
-            <h2>Front-End Developer</h2>
-            <p> Saya adalah seorang Mahasiswi Universitas Budi Luhur dengan jurusan
-                Teknik Informatika. Dan saya sedang menekuni bidang website terutama bagian
-                Front-End Developer. 
-            </p>
-            <address>
-            <a href="mailto:delinherlianap@gmail.com">Email Me!</a>
-        </address>
-        </section>
-        <section class="skill">
-            <h1>Apa saja yang saya kuasai?</h1>
-            <div class="skill-1">
-                <img src="asset/html-5.png" alt="html" class="fotohtml">
-                <h2>HTML</h2>
-                <P>Saya dapat memahami tentang hal-hal yang perlu dikuasai pada html adalah basic html, semantic html, form validation,
-                    SVG dan Canvas, information architecture, accessibility, dan SEO.
-                </P>
+    <header>
+        <h3>Kura-Kura</h3>
+        <p>Binatang yang lambat tapi pasti</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang Kura-Kura</a></li>
+            <li><a href="#jenis">Jenis Kura-kura</a></li>
+            <li><a href="#perawatan">Perawatan Kura-Kura</a></li>
+            <li><a href="#gambar">Gambar Kura-Kura</a></li>
+        </ul>
+    </nav>
+    <div class="hiro"></div>
+    <main>
+        <div class="content">
+            <article id="tentang" class="card">
+                <h3>Apa itu Kura-Kura?</h3>
+                <p>Kura-kura adalah hewan bersisik berkaki empat yang termasuk golongan reptil. Bangsa hewan yang disebut (ordo) Testudines (atau Chelonians) ini khas dan mudah dikenali dengan adanya ‘rumah’ atau batok (bony shell) yang keras dan kaku.
+                    Batok kura-kura ini terdiri dari dua bagian. Bagian atas yang menutupi punggung disebut karapas (carapace) dan bagian bawah (ventral, perut) disebut plastron. Kemudian setiap bagiannya ini terdiri dari dua lapis. Lapis luar umumnya berupa sisik-sisik besar dan keras, dan tersusun seperti genting; sementara lapis bagian dalam berupa lempeng-lempeng tulang yang tersusun rapat seperti tempurung. Perkecualian terdapat pada kelompok labi-labi (Trionychoidea) dan jenis penyu belimbing, yang lapis luarnya tiada bersisik dan digantikan lapisan kulit di bagian luar tempurung tulangnya.
+                    Dalam bahasa Indonesia, kita mengenal tiga kelompok hewan yang termasuk bangsa ini, ialah penyu (bahasa Inggris: sea turtles), labi-labi atau bulus (freshwater turtles), dan kura-kura (tortoises). Dalam bahasa Inggris, dibedakan lagi antara kura-kura darat (land tortoises) dan kura-kura air tawar (freshwater tortoises atau terrapins).
+                </p>
+            </article>
+            <article id="jenis" class="card">
+                <h3>Jenis Kura-kura</h3>
+                <p>Jenis kura-kura yang dapat dipelihara dirumah:</p>
+                <ul>
+                    <li>Jenis Kura-Kura Brazil</li>
+                    <p>Kura-kura Brazil atau nama lainnya Red Ear Slider Turtle adalah jenis yang penamaannya terinspirasi dari bagian bentuk telinganya yang memiliki corak berwarna merah. Kura-kura jenis ini termasuk dalam kura-kura air tawar dengan nama Latin Trachemys scripta elegans yang memang sudah populer dijadikan hewan peliharaan. Harga kura-kura Brazil termasuk yang paling terjangkau dibandingkan kura-kura jenis lainnya.</p>
+                    <li>Jenis Kura-Kura Ambon</li>
+                    <p>Kura-kura Ambon adalah jenis yang asli dari Indonesia yang memiliki nama Latin Cuora amboinensis. Kura-kura jenis ini bisa ditemukan di wilayah Ambon, Maluku, dan juga telah menyebar di kawasan sekitarnya, misalnya Malaysia sampai daratan India. Ciri khas dari kura-kura Ambon adalah memiliki bentuk tempurung yang bulat dan menyerupai batok yang tampak sangat kokoh. Kura-kura Ambon biasanya berukuran sedang dan bisa bertahan hidup sampai 30 tahun.</p>
+                    <li>Jenis Kura-Kura Pipi Putih</li>
+                    <p>kura-kura pipi putih memiliki nama Latin Siebenrockiella crassicollis yang merupakan jenis Kura-kura air tawar. Kura-kura jenis ini juga dikenal dengan nama Malaysian Black Mud Turtle, Black Mud Terrapin, dan Smiling Terrapin. Ciri khas yang dimiliki kura-kura pipi putih adalah terlihat warnanya dengan jelas, yakni corak berwarna putih  di bagian sisi kepalanya. </p>
+                    <li>Jenis Kura-Kura Matahari</li>
+                    <p>Kura-kura matahari merupakan salah satu jenis kura-kura di Indonesia yang memiliki bentuk tempurung yang unik dan eksotis, nih. Hewan yang memiliki nama Latin Heosemys spinosa ini juga memiliki nama lain, yakni kura-kura duri dikarenakan bagian tepi tempurung yang berbentuk duri-duri tajam.</p>
+                </ul>
+            </article>
+            <article id="perawatan" class="card">
+                <h3>Merawat Kura-Kura dirumah</h3>
+                    <ul>
+                        <li>Sesuaikan dengan karakteristiknya</li>
+                        <p>Cara merawat kura-kura terbilang cukup mudah selama kamu mengenali karakteristiknya untuk mengetahui cara memperlakukannya. Secara umum, ada tiga jenis kura-kura yang dapat kita kenali, yakni kura-kura darat, kura-kura akuatik, dan kura-kura amfibi.</p>
+                        <li>Menyiapkan kandang</li>
+                        <p>Menyiapkan kandang yang sesuai dengan ukuran tubuhnya menjadi salah satu cara merawat kura-kura agar bisa hidup dengan nyaman.</p>
+                        <li>Perhatikan jumlah kura-kura yang dipelihara</li>
+                        <p>Tidak membiarkannya kesepian dapat menjadi salah satu cara merawat kura-kura dengan baik. Kamu disarankan untuk membeli sepasang kura-kura agar hewan peliharaan kamu memiliki teman.</p>
+                        <li>Cara memberi makan</li>
+                        <p>Salah satu hal terpenting ketika kamu merawat hewan peliharaan ialah memberinya makan secara teratur. Kamu bisa membeli makanan kura-kura di toko hewan peliharaan.</p>
+                    </ul>
+            </article>
+            <article id="gambar" class="card2">
+            <div class="thumbnail">
+                <a target="#" href="asset/img1.jpg">
+                <img src="asset/img1.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Kura-Kura Brazil</div>
             </div>
-            <div class="skill-1">
-                <img src="asset/css.png" alt="css" class="fotocss">
-                <h2>CSS</h2>
-                <P>Di CSS saya juga dapat memahami tentang basic CSS, CSS layouting, filter, tranmation dan animation serta CSS Flexbox dan CSS Grid.</P>
+            <div class="thumbnail">
+                <a target="#" href="asset/img2.jpg">
+                <img src="asset/img2.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Kura-Kura anak Brazil</div>
             </div>
-            <div class="skill-1">
-                <img src="asset/java-script.png" alt="js" class="fotojs">
-                <h2>Javascript</h2>
-                <p>Dan di JS saya juga dapat memahami Javascript dasar, Javascript Dom dan ES6 Modular Javascript. </p>
+            <div class="thumbnail">
+                <a target="#" href="asset/img3.1.jpg">
+                <img src="asset/img3.1.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Kura-Kura Matahari</div>
             </div>
-        </section>
-        <section class="kontak">
-            <h1>Hubungi Saya</h1>
-            <p>Untuk belajar dan nongkrong bersama atau ada kebutuhan ingin membuat project website static
-                untuk tugas kuliah dll Yuk Ngobrol!</p>
-            <address>
-                <a href="mailto:delinherlianap@gmail.com">Email Me!</a>
-            </address>
-        </section>
-    </div>
+            <div class="thumbnail">
+                <a target="#" href="asset/img4.1.jpg">
+                <img src="asset/img4.1.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Kura-Kura Pipi Putih</div>
+            </div>
+            <div class="thumbnail">
+                <a target="#" href="asset/img5.jpg">
+                <img src="asset/img5.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Kura-Kura Ninja</div>
+            </div>
+            <div class="thumbnail">
+                <a target="#" href="asset/picheader.jpg">
+                <img src="asset/picheader.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Kura-Kura Jepang</div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <article class="profile">
+                <h3>Tentang Penulis</h3>
+                <figure>
+                    <img src="asset/profile1.jpeg" class="responsive">
+                </figure>
+                <p>Nama saya Fakhri Setiawan. Saya Lahir di Jakarta pada tanggal 6 Juli 2002.
+                    Dan saya mempunyai Hobi Ngoding dan motto hidup saya itu hidup adalah ibadah serta cita-cita saya menjadi seorang IT Consultant.
+                </p>
+        </aside>
+    </main>
     <footer>
-        <a class="sosial-link" href="www.facebook.com">Facebook</a>
-        <a class="sosial-link" href="www.instragam.com">Instragam</a>
-        <a class="sosial-link" href="www.linkind.com">linkind</a>
-        <p>&copy; 2022, Delin Herliana Pasha</p> 
+        &copy; 2022, Fakhri Setiawan
     </footer>
+    </div>
 </body>
 </html>
