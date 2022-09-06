@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>FORM PENDAFTARAN RECRUITMENT CALON ANGGOTA OSIS SMA KORPRI BEKASI TAHUN 2022/2023</h1>
+    </header>
+    <form action="" method="post" autocomplete="off">
+            <div class="card1">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" name="nama" id="nama" autofocus required minlength="2">
+            </div>
+            <div class="card1">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="card1">
+                <label for="nohp">No.Handphone Aktif:</label><br>
+                <input type="tel" name="nohp" id="nohp" required pattern="(\+62|62|0)8[1-9][0-9]{6,9}$">
+            </div>
+            <div class="card1">
+                <label for="website">URL Resume:</label><br>
+                <input type="url" name="website" id="website" required>
+            </div>
+             <div class="card1">
+                <label for="tempatlahir">Tempat Lahir:</label><br>
+                <input type="text" name="tempatlahir" id="tempatlahir">
+            </div>
+            <div class="card1">
+                <label for="tanggal">Tanggal Lahir:</label><br>
+                <input type="date" name="tanggal" id="tanggal">
+            </div>
+            <div class="card1">
+                <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+                <input type="radio" name="jenis_kelamin"><span>Perempuan</span>
+                <input type="radio" name="jenis_kelamin"><span>Laki-laki</span>
+             </div>
+            <div class="card1">
+                <label for="kelas">Kelas:</label><br>
+                <input type="text" name="kelas" id="kelas" required>
+            </div>
+            <div class="card1">
+                <label for="alamat">Alamat Lengkap:</label><br>
+                <textarea name="alamat" rows="10" cols="15"></textarea>
+            </div>
+            <div class="card1">
+                <label for="cv">File Visi Misi Dan Foto 3x4:</label><br>
+                <input type="file" name="cv" id="cv" required>
+            </div>
+            <div>
+                <button class="button" role="button">Kirim</button>
+                <button class="button" role="button">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
