@@ -1,69 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style css*/
+
 body{
+    background-color: #980F5A;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color:whitesmoke;
+}
+
+.container{
+    width:720px;
     margin:auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(
-       315deg,
-       rgba(101,0,94,1) 3%,
-       rgba(60,132,206,1) 38%,
-       rgba(48,238,226,1) 68%,
-       rgba(255,25,25,1) 98%
-    );
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-}
-@keyframes gradient{
-    0%{
-        background-position: 0% 0%;
-    }
-    50%{
-        background-position: 100% 100%;
-    }
-    100%{
-        background-position: 0% 0%;
-    }
+    padding-top: 225px;
 }
 
-.wave{
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0,0,0);
-    opacity: 0.8;
-    bottom: 0;
-    left:0;
-    z-index: -1;
+
+section{
+    margin-bottom: 200px;
 }
 
-.wave:nth-of-type(2){
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
+.profil{
+    padding:20px;
 }
 
-.wave:nth-of-type(3){
-    bottom:-2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
+
+.fotodelin{
+    width: 200px;
+    border-radius: 100%;
+    float:right;
+    margin-left: 30px;
 }
-@keyframes wave {
-    2%{
-        transform: translateX(1);
-    }
-    25%{
-        transform: translateX(-25%);
-    }
-    50%{
-        transform: translateX(-50%);
-    }
-    75%{
-        transform: translateX(-25%);
-    }
-    100%{
-        transform: translateX(1);
-    }
+
+.profil h1{
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.profil h2{
+    font-size: 1.25em;
+    font-weight: bold;
+    color:#3BACB6;
+    margin-bottom: 10px;
+}
+
+.profil p{
+    font-size: 0.93rem;
+}
+
+
+address a{
+    background-color: #3BACB6;
+    padding:12px 30px;
+    text-decoration: none;
+    color:white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+address a:hover{
+    background-color: aliceblue;
+    color:rgb(202, 87, 87);
+}
+
+.skill h1{
+    font-size: 1.43rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.skill-1{
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.skill-1 .fotohtml,
+.skill-1 .fotojs{
+    width:180px;
+    float:left;
+    margin-right: 30px;
+}
+
+.skill-1 .fotocss{
+    width:180px;
+    float:right;
+    margin-left:30px;
+}
+
+.skill-1 h2{
+    font-size: 1.56rem;
+    color:#3BACB6;
+    font-weight: bold;
+}
+
+.skill-1 p{
+    font-size: 0.93rem;
+}
+
+.kontak{
+    text-align: center;
+}
+
+.kontak h1{
+    font-size: 1.43rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.kontak p{
+    width:60%;
+    margin:auto;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #393e46;
+    padding:20px;
+    text-align: center;
+}
+
+.sosial-link{
+    margin: 0 12px 20px;
+    text-decoration: none;
+    color:#3BACB6;
+}
+
+footer a:hover{
+    color:whitesmoke;
+}
+
+footer p{
+    font-size: 0.875rem;
+    margin-top: 30px;
 }
